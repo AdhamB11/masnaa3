@@ -1,14 +1,13 @@
 function generateFields() {
     const rows = document.getElementById('rows').value;
     const tableBody = document.querySelector('#inputTable tbody');
-    tableBody.innerHTML = ''; // مسح أي صفوف سابقة
+    tableBody.innerHTML = ''; 
 
     if (rows < 1) {
         alert('يرجى إدخال عدد صحيح.');
         return;
     }
 
-    // إنشاء الصفوف بناءً على عدد العناصر
     for (let i = 0; i < rows; i++) {
         let row = document.createElement('tr');
 
